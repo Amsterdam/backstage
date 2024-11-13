@@ -1,0 +1,5 @@
+services:
+  web:
+    build:
+      context: .
+    image: ${REGISTRY:-localhost:5000}/${REPOSITORY:-tamm/backstage}:${VERSION:-latest}
